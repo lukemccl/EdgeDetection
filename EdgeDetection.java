@@ -17,7 +17,7 @@ public class EdgeDetection {
 
     public static void main(String[] args) throws Exception{
         //ensures all the file systems required are in order
-        File originalFile = new File(path + "\\test2.jpg");//new File(args[0]);
+        File originalFile = new File(args[0]);
         File originalDirectory = new File(path+"\\result");
         if(!(originalDirectory.exists() && originalDirectory.isDirectory())){
             try{
